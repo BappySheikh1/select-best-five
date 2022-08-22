@@ -11,6 +11,15 @@ body{
     align-items: center;
     flex-direction: column;
     text-align: center;
+    
+} 
+.header-Container h1{
+    font-size: 50px;
+    font-family: cursive;
+    color: rgb(175, 75, 3);
+}
+.header-Container p{
+ color: white;
 }
 .images-5{
     height: 290px;
