@@ -29,15 +29,16 @@ for(let i =0; i< buttonSelect.length;i++){
  
  element.addEventListener('click',function(event){
     count++
+    console.log(count)
     if(count > 5){
-        alert('5jon er beshi add deoya jabe nah')
-        return;
+        alert('5 er beshi noy')
+        return ;
     }
-   const unOrdedList=document.getElementById('unOrded-list');
-   const li=document.createElement('li');
-   li.innerText=event.target.parentNode.parentNode.children[0].innerText;
-   unOrdedList.appendChild(li);
-     this.disabled=true;
+    const unOrdedList=document.getElementById('unOrded-list');
+        const li=document.createElement('li');
+        li.innerText=event.target.parentNode.parentNode.children[0].innerText;
+        unOrdedList.appendChild(li);
+          this.disabled=true;
    
  })
 }
@@ -46,8 +47,14 @@ for(let i =0; i< buttonSelect.length;i++){
 
 document.getElementById('btn-calculate').addEventListener('click',function(){
     const perPlayerField=getInputValueById('perPlayer-field');
-    const totalPlayerCost=perPlayerField * count;
-    setTextValyeById('playerExpenses-total',totalPlayerCost);
+    
+        const totalPlayerCost=perPlayerField * count;
+        console.log(totalPlayerCost);
+        setTextValyeById('playerExpenses-total',totalPlayerCost);
+    
+    
+    
+    
 })
 
 document.getElementById('calculate-total').addEventListener('click',function(){
